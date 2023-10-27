@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="inner">
+            <input type="text" id="abcd" oninput="inpTe()" onkeydown="preventBackspace(event)"/>
+            <div class="inner-line">
+                <div class="text"></div>
+                <hr/>
+                <div class="decision">
+                    <ul>
+                        <li>
+                            <div class="same">Time left: <p class="time">60s</p></div>
+                        </li>
+                        <li>
+                            <div class="same">Mistakes: <p id="mistake">0</p> </div>
+                        </li>
+                        <li>
+                            <div class="same">WPM: <p id="wpm">0</p></div>
+                        </li>
+                        <li>
+                            <div class="same">CPM: <p id="cpm">0</p></div>
+                        </li>
+                        <li>
+                            <button id="start">Start</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
